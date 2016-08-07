@@ -13,3 +13,5 @@
 
 * What is a merge conflict?
     - A merge conflict occurs when the current branch and the branch being merged into have diverged. For example, if the current branch has modified a string of text, but the master branch deleted the text that was to be modified, a merge conflict will occur when a merge is attempted.
+
+**Cole me down on the panny stai**
