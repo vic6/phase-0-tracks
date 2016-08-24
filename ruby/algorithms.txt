@@ -1,0 +1,13 @@
+Elevator algorithm
+Robot will store desired floor in variable. 
+Stand in front of doors until they open, if people are not exiting, enter elevator. Find control panel. If floor variable has not been selected, press number. When elevator reaches desired floor, exit.
+
+Gym workout
+Workout will be stored in dictionary, exercise => reps.
+For each exercise in dict
+    initialize counter 
+    until counter is equal to reps 
+        perform exercise 
+        increment counter by one 
+        When counter is equal to reps
+        move on to next exercise
