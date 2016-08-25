@@ -1,0 +1,21 @@
+.column-1 {
+  float: left;
+  margin: 30px;
+  padding: 5px;
+  width: 40%;
+  background: #f0f0f5;
+}
+.column-2 {
+  float: right;
+  margin: 30px;
+  padding: 5px;
+  width: 40%;
+  background: #f0f0f5;
+}
+footer {
+  clear: both;
+}
+body {
+  font-family: "times new roman";
+  background: #ccffff;
+}
