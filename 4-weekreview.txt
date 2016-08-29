@@ -1,0 +1,25 @@
+1. A variable is used to store data. A programmer would use a variable when he wants to store a value and later retrieve it.
+2. Ruby will create the variable full_name and set it equal the value in first name then concatenate that value width the value in last_name.
+3. A string contains characters. One was use the class to contain the name "bob".
+An integer is a whole number. Would be used to add two number.
+A float is a decimal point number. Used to show the value 4.5
+nil - has no value, you could use one to initialize a variable
+boolean - a true false condition
+
+4. An algorithm is a set of rules followed by a computer to solve a problem.
+5. A searching algorithm and a sorting algorithm 
+6. A method is a set of expressions that return a value. One was use a method to encapsulated data and easily use that data elsewhere is a program.
+7. Return value - The end value in a method
+side effect - an observable interaction when calling methods
+parameter - a value given to a method
+argument - when a parameter is used in a method
+implicit return - at the end of the method, the last expression returned.
+
+8. Global scope meant is has access to any part of the file. Method scope only has access to variables in that method. The 
+9. The order of statements are executed in a program
+10. loop - execute a series of code a certain amount of times
+if - executes a piece of code if condition is meet
+else - If the prior conditions were not met execute this code.
+elsif - tests another condition before ending the block
+while - continues to loop through a series of code while the condition is met.
+until - continues to loop through a series of code while a condition is not met.
