@@ -4,36 +4,41 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
-# "iNvEsTiGaTiOn".<???>
+puts "iNvEsTiGaTiOn".gsub(/\w/).with_index{|s, i| i.even? ? s.upcase : s.downcase}
 # => “InVeStIgAtIoN”
 
-# "zom".<???>
+p "zom".insert(1, "o")
 # => “zoom”
 
-# "enhance".<???>
+p "enhance".ljust(11).rjust(15)
 # => "    enhance    "
 
-# "Stop! You’re under arrest!".<???>
+p "Stop! You’re under arrest!".upcase
 # => "STOP! YOU’RE UNDER ARREST!"
 
-# "the usual".<???>
+p "the usual".split().push("suspects").join(' ')
 #=> "the usual suspects"
 
-# " suspects".<???>
+p " suspects".insert(0, "the usual")
 # => "the usual suspects"
 
-# "The case of the disappearing last letter".<???>
+p "The case of the disappearing last letter".chop
 # => "The case of the disappearing last lette"
 
-# "The mystery of the missing first letter".<???>
+p "The mystery of the missing first letter"[1..-1]
 # => "he mystery of the missing first letter"
 
-# "Elementary,    my   dear        Watson!".<???>
+p "Elementary,    my   dear        Watson!".gsub(/\s+/, " ")
+#or
+p "Elementary,    my   dear        Watson!".split.join(" ")
 # => "Elementary, my dear Watson!"
 
-# "z".<???>
+p "z".ord
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
+# It is the ASCII code
 
-# "How many times does the letter 'a' appear in this string?".<???>
+p "How many times does the letter 'a' appear in this string?".count("a")
+#or
+p "How many times does the letter 'a' appear in this string?".scan(/a/).length
 # => 4

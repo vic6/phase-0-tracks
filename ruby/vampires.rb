@@ -5,7 +5,7 @@ count = 1
 #for each employee, loop will run
 while count <= total 
   #resets prob on each iteration
-  prob = "Results Inconclusive."
+  prob = "Results Inconclusive"
   puts "Employee #{count}"
   puts "What is your name?"
   name = gets.chomp.downcase
