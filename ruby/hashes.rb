@@ -17,9 +17,12 @@ designer_clients.each do |key, value|
   print "#{key}: "
   key.to_sym
   designer_clients[key] = gets.chomp.to_sym
+  #just to include a boolean in the hash
+  if designer_clients[key] == "yes".to_sym ? designer_clients[key] = true : designer_clients[key] = false
+  end
 end
 
-print "Would you like to update a key?"
+print "Enter a key to update or 'none' to finish: "
 answer = gets.chomp.to_sym
 if answer != "none".to_sym
   designer_clients.each do |key, value|
