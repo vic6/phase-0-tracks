@@ -21,7 +21,7 @@ designer_clients.each do |key, value|
   if designer_clients[key] == "yes".to_sym ? designer_clients[key] = true : designer_clients[key] = false
   end
 end
-
+p designer_clients
 print "Enter a key to update or 'none' to finish: "
 answer = gets.chomp.to_sym
 if answer != "none".to_sym
