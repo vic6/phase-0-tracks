@@ -10,7 +10,7 @@ def nameSwitch(name)
   newname = name.split(' ').reverse.join(' ')
 end
 
-def charactor(str)
+def character(str)
   str = nameSwitch(str)
   vowels = 'aeiouAEIOU'
   consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
@@ -38,5 +38,19 @@ def charactor(str)
   newStr
 end
 
-p charactor('Felicia Torres')
+name_list = []
+
+loop do 
+  puts "Enter your name to find out your alias(type 'quit' or enter to finish): "
+  name = gets.chomp
+  if name == '' or name == 'quit'
+    break
+  end
+  name_list << name
+  puts
+end
+
+for name in name_list
+  puts "#{name}, your alias is #{character(name)}"
+end
 
