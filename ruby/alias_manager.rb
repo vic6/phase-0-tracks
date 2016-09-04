@@ -1,7 +1,7 @@
 #FIRST ATTEMPT
 #prompt for real name
 # swap first and last name
-# spilt charactors, if a vowel, change to next vowel, if consonants, switch to next consonant
+# split characters, if a vowel, change to next vowel, if consonants, switch to next consonant
 
 
 def nameSwitch(name)
