@@ -30,6 +30,9 @@ num = 6
 
 
 def fib(num)
+  list = [0, 1]
+  i = 0
+  j = 1
   while j < num - 1
     list << list[i..j].inject(0){|sum, x| sum + x}
     i += 1
