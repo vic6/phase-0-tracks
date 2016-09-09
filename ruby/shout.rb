@@ -33,7 +33,7 @@ class IceCreamMan
 end
 
 john = Arnold.new
-john.yell_angrily('I\'m going to ask you a bunch of questions, and I want them to be answered immediately.')
+john.yell_angrily('I\'m going to ask you a bunch of questions, and I want to have them answered immediately.')
 
 mr_swirly = IceCreamMan.new
 mr_swirly.yell_happily
