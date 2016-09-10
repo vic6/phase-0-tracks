@@ -1,0 +1,24 @@
+Class
+init (word)
+string that holds a new word
+string that holds hidden word
+number of guess allowed based on word length
+is_over = false
+
+def guess(letter)
+list that hold all letters guessed
+if the letter is not not in word and is not in guessList subtract 1 from guess
+if letter is in word, covert secret string to letter at correct index
+
+def game_over
+if guesses = 0
+gameover == true
+print hummiliating messaged
+if secretword = word
+gameover == true
+print congratulating message
+
+
+def displayword
+print secretword
+
