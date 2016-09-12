@@ -26,7 +26,7 @@ class Game
   attr_accessor
   def initialize()
     print "Enter a word: "
-    @word = gets.chomp
+    @word = get.chomp
     @guesses_remaining = @word.length
     @hidden_word = "-" * @word.length
     @is_over = false
@@ -59,8 +59,9 @@ class Game
       end
 
       if not @word.include?(guess)
-        puts "Wrong, Guesses Remaining: #{@guesses_remaining}"
         @guesses_remaining -= 1 
+        puts "Wrong, Guesses Remaining: #{@guesses_remaining}"
+        
       end
       p @hidden_word
     end
@@ -82,8 +83,8 @@ end
 
 
 #TESTING
-word = 'hello'
-hidden_word = '-' * word.length
+# word = 'hello'
+# hidden_word = '-' * word.length
 
 # p word 
 # p hidden_word
@@ -104,6 +105,9 @@ hidden_word = '-' * word.length
 # end
 
 # p hidden_word
+
+
+DRIVER CODE
 
 test = Game.new
 
