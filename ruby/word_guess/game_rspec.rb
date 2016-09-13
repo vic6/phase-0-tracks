@@ -7,7 +7,8 @@ describe Game do
     expect(new_game.guess_check('5')). to eq false
   end
 
-  it ""
+  it 'checks to see guess is a letter' do
+    expect(new_game.guess_check('a')). to eq true
+  end
 
-  it 
 end

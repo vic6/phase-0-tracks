@@ -107,25 +107,25 @@ end
 # p hidden_word
 
 
-DRIVER CODE
+# DRIVER CODE
 
-test = Game.new
+# test = Game.new
 
-puts "Number of guesses: #{test.get_guesses}"
-while test.is_over? != true
-  print "Guess a letter: "
-  guess = gets.chomp
-  test.guess_check(guess)
-  test.guess(guess)
-  puts
+# puts "Number of guesses: #{test.get_guesses}"
+# while test.is_over? != true
+#   print "Guess a letter: "
+#   guess = gets.chomp
+#   test.guess_check(guess)
+#   test.guess(guess)
+#   puts
   
-end
+# end
 
-if test.get_guesses > 0
-  puts "Congratulations, You win!"
-else 
-  puts "Game over Loser!"
-end
+# if test.get_guesses > 0
+#   puts "Congratulations, You win!"
+# else 
+#   puts "Game over Loser!"
+# end
 
 
 
