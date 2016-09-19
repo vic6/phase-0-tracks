@@ -68,7 +68,10 @@ console.log(matching({name: "Bob", age: 98}, {name: "Tamir", age: 51}));
 console.log(listLength(5));
 
 for(var i = 0; i < 10; i++) {
-  console.log(listLength(5))
+  currentList = listLength(5)
+  console.log(currentList)
+  console.log("The largest word is : " + largestItem(currentList))
+  console.log()
 }
 
 // console.log(Math.floor(Math.random()*(10 - 1 + 1)) + 1)
