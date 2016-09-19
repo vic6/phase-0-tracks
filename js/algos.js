@@ -38,13 +38,37 @@ function matching(hash1, hash2) {
   return false
 }
 
+function listLength(num) {
+  word = ''
+  wordList = []
+  letters = 'abcdefghijklmnopqrstuvwxyz'
+  for(var i = 0; i < num; i++) {
+    word = ''
+    for(var j = 0; j < Math.floor(Math.random()*(11 - 1 + 1)) + 1; j++) {
+      word += (letters.charAt(Math.floor(Math.random() * letters.length)));
+      //console.log('WORD:' + word)
+    }
+    wordList.push(word)
+  }
+  return wordList
+}
+
 //Release 0
-console.log(largestItem(lists))
-console.log(largestItem(ice_cream))
+console.log(largestItem(lists));
+console.log(largestItem(ice_cream));
 
 //Release 1
-test1 = {name: "Tamir", age: 51}
-test2 = {name: "Tamir", age: 54}
+test1 = {name: "Tamir", age: 51};
+test2 = {name: "Tamir", age: 54};
 
-console.log(matching(test1, test2))
-console.log(matching({name: "Bob", age: 98}, {name: "Tamir", age: 51}))
+console.log(matching(test1, test2));
+console.log(matching({name: "Bob", age: 98}, {name: "Tamir", age: 51}));
+
+//Release 2
+console.log(listLength(5));
+
+for(var i = 0; i < 10; i++) {
+  console.log(listLength(5))
+}
+
+// console.log(Math.floor(Math.random()*(10 - 1 + 1)) + 1)
