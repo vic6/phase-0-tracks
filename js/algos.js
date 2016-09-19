@@ -5,7 +5,8 @@ if length is greater than max length, largest word is set to current item.
 */
 
 lists = ["long phrase","longest phrase","longer phrase"]
-ice_cream = ['fudge', 'chocolate', 'pineapple plumbus8', 'strawberry tornado']
+ice_cream = ['fudge', 'chocolate', 'pineapple plumbus', 'strawberry tornado']
+
 
 function largestItem(list) {
   max = 0;
@@ -26,6 +27,24 @@ function largestItem(list) {
   return max_phrase
 }
 
+function matching(hash1, hash2) {
+  for(var key in hash1) {
+    for(var key2 in hash2) {
+      if (hash1[key] == hash2[key2]) {
+        return true;
+      }
+    }
+  }
+  return false
+}
 
+//Release 0
 console.log(largestItem(lists))
 console.log(largestItem(ice_cream))
+
+//Release 1
+test1 = {name: "Tamir", age: 51}
+test2 = {name: "Tamir", age: 54}
+
+console.log(matching(test1, test2))
+console.log(matching({name: "Bob", age: 98}, {name: "Tamir", age: 51}))
