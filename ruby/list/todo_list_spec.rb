@@ -5,7 +5,7 @@ describe TodoList do
 
   it "stores the list items given on initialization" do
     expect(list.get_items).to eq ["do the dishes", "mow the lawn"]
-  end
+  endsub
 
   it "adds an item to the list" do
     list.add_item("mop")
