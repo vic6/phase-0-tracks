@@ -1,0 +1,6 @@
+1. SELECT * FROM Movies
+2. UPDATE Movies SET director = 'Louis CK' WHERE director = 'Louie CK'
+3. SELECT * FROM Movies, Charactor
+4. SELECT Movies.title, Charactor.name , Charactor.actor FROM Movies JOIN Charactor ON Movies.id = Charactor.movie_id
+5. DELETE FROM Charactor WHERE Charactor.name = 'Sea Bass'
+6. SELECT Movies.title, Movies.year, Charactor.name, Charactor.actor FROM Movies JOIN Charactor ON Movies.id = Charactor.movie_id 
